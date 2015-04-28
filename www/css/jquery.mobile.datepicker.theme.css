@@ -1,0 +1,65 @@
+/*!
+* jQuery Mobile Datepicker Wrapper 1.4.2
+http://uglymongrel.com.com
+*
+* Copyright Alexander Schmitz and other contributors
+* Released under the MIT license.
+* http://uglymongrel.com.org/license
+*
+*/
+
+/* Globals */
+.ui-datepicker,
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-prev {
+	/* ui-shadow */
+	-webkit-box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ rgba(0,0,0,.15) /*{global-box-shadow-color}*/;
+	-moz-box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ rgba(0,0,0,.15) /*{global-box-shadow-color}*/;
+	box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ rgba(0,0,0,.15) /*{global-box-shadow-color}*/;
+}
+/* Swatches */
+/* A
+-----------------------------------------------------------------------------------------------------------*/
+html .ui-overlay-a .ui-datepicker td span,
+html .ui-overlay-a .ui-datepicker a,
+html .ui-body-a .ui-datepicker td span,
+html .ui-body-a .ui-datepicker a,
+.ui-page-theme-a .ui-datepicker td span,
+.ui-page-theme-a .ui-datepicker a {
+	/* ui-btn-a */
+	background-color: #548176 /*{a-bup-background-color}*/;
+	border-color: #ddd /*{a-bup-border}*/;
+	color: #fff /*{a-bup-color}*/;
+	
+}
+html body .ui-datepicker .ui-state-highlight {
+	/* ui-btn-down */
+	background-color: #555 /*{a-bdown-background-color}*/;
+	border-color: #ddd /*{a-bdown-border}*/;
+	color: #fff /*{a-bdown-color}*/;
+	
+}
+html body .ui-datepicker .ui-state-active {
+	/* ui-btn-active */
+	background-color: #333 /*{a-active-background-color}*/;
+	border-color: #3388cc /*{a-active-border}*/;
+	color: #fff /*{a-active-color}*/;
+	text-shadow: 0 /*{a-active-shadow-x}*/ 1px /*{a-active-shadow-y}*/ 0 /*{a-active-shadow-radius}*/ #005599 /*{a-active-shadow-color}*/;
+}
+.ui-datepicker td,
+.ui-datepicker .ui-datepicker-header {
+	/* ui-body-a */
+	border-color: #333 /*{a-body-border}*/;
+	background-color:#548176 /*{a-body-background-color}*/;
+	color: #fff /*{a-body-color}*/;
+	
+}
+
+.ui-datepicker th {
+	/* ui-bar-a */
+	background-color: #555 /*{a-bar-background-color}*/;
+	border-color: #333 /*{a-bar-border}*/;
+	color: #fff /*{a-bar-color}*/;
+	
+	font-weight: bold;
+}

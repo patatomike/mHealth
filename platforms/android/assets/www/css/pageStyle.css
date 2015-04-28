@@ -1,0 +1,160 @@
+
+/*reset acquired from http://necolas.github.io/normalize.css*/
+* {
+  -moz-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing: border-box;margin: 0; padding: 0;list-style: none;
+  position: relative;font-weight: normal; -webkit-box-shadow:none;
+}
+
+h2{text-shadow:none;font-weight: normal;}
+
+#calendarUl li{background-color: #548176!important;}
+
+#calendarUl li a{background-color: #548176!important;color:#fff!important;text-decoration: none!important;font-weight: normal!important;
+font-family:"Alef",Arial,sans-serif!important; }
+
+.main-page{background-color: #431111;}
+
+.itemsContainer li a:visited{color: #fff;}
+
+.itemsContainer{width: 14em;height: 14em;position: fixed;left: 50%;top: 50%;margin-top: -7em;margin-left: -7em;z-index: 10;border-radius: 3px;
+	transition:all 0.6s ease;-ms-transition:all 0.6s ease;-webkit-transition:all 0.6s ease;-moz-transition:all 0.6s ease;
+	-o-transition:all 0.6s ease;}
+
+.itemsContainer li{margin: 1%;border:1px solid #fff;width: 48%;height: 48%;float: left;border-radius: 5%;list-style: none;
+	position: relative;background-color: #548176;}
+.itemsContainer li a{width: 100%;height: 100%;position: relative;display: block;font-size: 0.9em;text-align: center;text-decoration: none;
+	padding-top: 40%;color: #fff;font-weight: normal;}
+
+.itemsContainer li:hover{background-color: #555;}
+
+.patientsList h2 a{font-family: "Alef",Arial,sans-serif!important;}
+
+.selectPatient{color:#fff!important;background-color: #22574A!important;text-decoration: none!important;
+	border-top: 1px solid #fff!important;text-shadow:none!important;}
+
+.unSelectPatient{background-color: #548176!important;text-decoration: none!important;color: #fff!important;}
+
+.selectButton{height: 2.7em;position:absolute;left:100%;margin-left: -3em!important;width: 4em;
+	color: #fff!important;font-weight: normal!important;border-radius: 4px!important;padding-right:15px!important;text-align:left;padding-top: 25px;
+background-image: -ms-linear-gradient(top right, #6B6B6B 0%, #000000 100%);
+background-image: -moz-linear-gradient(top right, #6B6B6B 0%, #000000 100%);
+background-image: -o-linear-gradient(top right, #6B6B6B 0%, #000000 100%);
+background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #6B6B6B), color-stop(1, #000000));
+background-image: -webkit-linear-gradient(top right, #6B6B6B 0%, #000000 100%);
+background-image: linear-gradient(to bottom left, #6B6B6B 0%, #000000 100%);}
+
+#selectButton:hover{
+	background-color:rgba(0,0,0,0.8);
+}
+#selectedDiv{
+	margin-top: 3px;
+}
+.navArrow{position: relative;width: 20%;height: 6em;float: left;background-color: #eee;}
+/*#prevArrow:hover{background-color:#333;}
+#nextArrow:hover{background-color:#333;}*/
+#prevArrow::before{
+	content: '';top:10%;left:0;position: absolute;width: 10px;height: 40%;background-color:#548176 ;margin:0 0 0 40%;
+	transform:skew(-225deg,0deg);-webkit-transform:skew(-225deg,0deg);-moz-transform:skew(-225deg,0deg);
+	-ms-transform:skew(-225deg,0deg);-o-transform:skew(-225deg,0deg);
+}
+#prevArrow::after{
+	content: '';top:50%;left:0;position: absolute;width: 10px;height: 40%;background-color: #548176;margin:0 0 0 40%;
+	transform:skew(225deg,0deg);-webkit-transform:skew(225deg,0deg);-moz-transform:skew(225deg,0deg);
+	-ms-transform:skew(225deg,0deg);-o-transform:skew(225deg,0deg);
+}
+#nextArrow::before{
+	content: '';top:10%;left:0;position: absolute;width: 10px;height: 40%;background-color:#548176 ;margin:0 0 0 40%;
+	transform:skew(45deg,0deg);-webkit-transform:skew(45deg,0deg);-moz-transform:skew(45deg,0deg);
+	-ms-transform:skew(45deg,0deg);-o-transform:skew(45deg,0deg);
+}
+#nextArrow::after{
+	content: '';top:50%;left:0;position: absolute;width: 10px;height: 40%;background-color: #548176;margin:0 0 0 40%;
+	transform:skew(-45deg,0deg);-webkit-transform:skew(-45deg,0deg);-moz-transform:skew(-45deg,0deg);
+	-ms-transform:skew(-45deg,0deg);-o-transform:skew(-45deg,0deg);
+}
+
+#selectedList{width: 60%;height: 6em;float: left;background-color: #548176;border-radius: 2px;}
+
+#selectedList li{color: #fff;padding: 15px;position: absolute;display: none;}
+
+#selectedList li:first-child{display: initial;}
+
+.optionsDiv{margin-top:2px;width: 100%;float: left;background-color:#548176;}
+
+#calendarList{width: 100%;height:7em;}
+
+#calendarPopup{width:100%;height: auto;background-color:#548176;color:#fff;font-weight: normal;font-family: "Alef",Arial,sans-serif;}
+
+#calendarPopup table tr{width:100%;border-bottom:1px solid #fff;margin: 1px;height: auto;font-family: "Alef",Arial,sans-serif;color:#fff;}
+
+#calendarPopup table tr:last-child{border-bottom:none;}
+
+#popupButton{height: 2.5em;position: absolute;margin-top: 1%;width: 100%;color: #fff;font-weight: normal;
+}
+.optionsMenu li{border:1px solid #999;border-radius: 3px;float: left;width: 50%;height: 7em;background-color: #548176;
+}
+.optionsMenu li:hover{background:rgba(50,50,50,0.7);
+}
+a,p,li,h4,h6{font-family: "Alef",Arial,sans-serif;text-shadow:none;
+}
+#optionsMenu li a{clear: both;float: left;vertical-align:text-top;height: 100%;width: 100%;position: relative;
+	display: block;font-size: 1em;text-align: center;text-decoration: none;padding-top: 2.5em;color: #fff;font-weight: normal;
+}
+#optionsMenu li a p{ top:-5%;
+}
+.optionsIcon{top:-10%; margin-bottom: 2%;
+}
+#splashScreen{
+	background-color: #000;	
+}
+#splashDiv{position:fixed;width: 100%;height: 100%;background-color: #737170;z-index: 14;display: block;
+}
+
+#splashDiv h2{text-align: center;color: #fff;top: 40%;
+}
+#splashDiv p{text-align: center;color: #fff;top:41%;
+}
+#splashDiv .loading{text-align: center;color: #fff;top:75%;
+}
+#sos{
+	background-color: red;
+}
+#todoTable{color:#fff;width: 100%;float: left;margin-top: 5px;border-radius: 5px;display: none;padding: 15%;
+	font-family: "Alef",Arial,sans-serif!important;}
+#todoTable:hover{cursor: pointer;}
+#todoTable tr{}
+#tableHeader{border-bottom:1px solid #fff;}
+#todoTable td{padding: 10px;width: 50%;}
+#calendarButton{height:2.4em!important;position:relative;float:left;width:98%!important;color: #fff;font-weight: normal!important;
+ font-family: "Alef",Arial,sans-serif!important;text-align: center!important;font-size: 1em!important;margin-left: 1%!important;  
+ vertical-align:middle!important;border-radius: 2px!important;padding: 10px!important;margin-bottom: 2px!important;
+ border:none!important;
+ background-color: #548176;
+}
+#newTaskButton{height:2.4em!important;position:relative;float:left;width:98%!important;color: #fff;font-weight: normal!important;
+ font-family: "Alef",Arial,sans-serif!important;text-align: center!important;font-size: 1em!important;margin-left: 1%!important; 
+ vertical-align:middle!important;border-radius: 2px!important;padding: 10px!important;margin-bottom: 2px!important;
+ border:none!important;
+ background-color: #548176;
+}
+#fieldsWrapper{background-color: red!important;}
+#newTask{background-color:#333!important;height: 100%;}
+.newTaskHeader{margin: 1em 0 1em 1em;color:#fff!important;font-weight: normal;text-decoration: none;}
+.fieldsWrapper{width: 90%;margin-left: 5%;font-family: "Alef",Arial,sans-serif!important;}
+.newTaskIcons{
+	float:left;margin: 9px 2px 0 0;clear: left;color: #fff;background-color: #548176;padding:2px 3px 2px 3px;
+	border-radius: 2px;
+}
+.medicalStaffIcon{padding: 1px 5px 2px 5px!important;}
+.fieldsDiv{
+	margin-bottom: 0.6em;
+	width: 86%;float: left;font-family: "Alef",Arial,sans-serif!important;
+
+}
+
+#createTaskBtn{
+	width: 86%;border-style: none!important;
+	float: left;left: 34px;font-family: "Alef",Arial,sans-serif!important;color: #fff;
+	background-color: #548176;
+	text-decoration: none!important;font-weight: normal!important;
+}
